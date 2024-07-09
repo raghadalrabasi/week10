@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제19</title>
+</head>
+<body>
+    <script>
+        function max3(a, b, c) {
+            return Math.max(a, b, c);
+        }
+
+        function min3(a, b, c) {
+            return Math.min(a, b, c);
+        }
+
+        var num1 = 10, num2 = 5, num3 = 8;
+        var max = max3(num1, num2, num3);
+        var min = min3(num1, num2, num3);
+
+        document.write("Maximum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + max + "<br>");
+        document.write("Minimum of " + num1 + ", " + num2 + ", and " + num3 + " is: " + min);
+    </script>
+</body>
+</html>

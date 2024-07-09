@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단어 정렬</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var count = parseInt(prompt("정렬할 단어의 개수를 입력하세요:"));
+
+        var words = [];
+
+        for (var i = 0; i < count; i++) {
+            var word = prompt("단어를 입력하세요:");
+            words.push(word);
+        }
+
+        document.write("<h3>오름차순 정렬</h3>");
+        words.sort();
+        words.forEach(function(word) {
+            document.write(word + "<br>");
+        });
+
+        document.write("<h3>내림차순 정렬</h3>");
+        words.sort().reverse();
+        words.forEach(function(word) {
+            document.write(word + "<br>");
+        });
+    </script>
+</body>
+</html>

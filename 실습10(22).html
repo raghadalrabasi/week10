@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제22</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var now = new Date();
+        var cuurentTimeMillis = now.getTime();
+        
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        
+
+        document.write("현재 시간:" + hours + "시" + minutes + "분" + seconds + "초<br/>");
+        document.write("현재 시간 (Current time in milliseconds):" + cuurentTimeMillis + "<br/>");
+
+        var today = new Date();
+        var y = today.getFullYear();
+        var m = today.getMonth() +1;
+        var d = today.getDate();
+        
+        document.write("오늘 날짜 :" + y +"년" + m +"월" +d +"일<br/>" );
+       
+    </script>
+</body>
+</html>
